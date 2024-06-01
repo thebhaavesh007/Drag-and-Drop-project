@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Image Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="upload-area">
+        <figure id="drop-zone" class="drop-zone">
+          <img src="upload.png" alt="Upload Icon" class="upload-icon">
+            <p>Drag & Drop your image here or</p>
+            <button id="browse-btn">Browse</button>
+            <input type="file" id="image-input" accept=".jpg">
+            <img id="preview-img" alt="Image Preview">
+        </figure>
+        <textarea id="image-description" placeholder="Enter image description..."></textarea>
+        <button id="save-btn">Save</button>
+    </div>
+    <div id="uploads">
+        <!-- Uploaded images and descriptions will be displayed here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
